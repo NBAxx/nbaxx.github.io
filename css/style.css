@@ -5,7 +5,7 @@
     --primary-colour : #ffe9de;
     --secondary-colour : #e48a81;
     --text-color : #000;
-    --text--color2 : #ffe9de; 
+    --text-color2 : #ffe9de; 
     --background-color : #fff;
     --border-top : rgba(0,0,0,0.6);
     --box-shadow : rgba(0,0,0,0.6);
@@ -16,7 +16,7 @@
     --primary-colour : #000;
     --secondary-colour : #e48a81;
     --text-color : #999;
-    --text--color2 : #999; 
+    --text-color2 : #999; 
     --background-color : #000;
     --border-top : rgba(249, 248, 248, 0.6);
     --box-shadow : rgba(249, 248, 248, 0.6);
@@ -143,7 +143,7 @@ a
     opacity: 0;
     pointer-events: none;
     transition: all .4s;
-    z-index: 1;
+    z-index: 11;
 }
 
 .top.active
@@ -208,7 +208,7 @@ a
     width: 100%;
     text-align: center;
     z-index: 11;
-    color: var(--text--color2);
+    color: var(--text-color2);
     font-weight: 600;
 }
 
@@ -257,12 +257,12 @@ a
     background-color: rgba(0,0,0,0.6);
     padding: 2rem;
     border-radius: 50%;
-    color: var(--text--color2);
+    color: var(--text-color2);
 }
 
 .clicker::after
 {
-    color: var(--text--color2);
+    color: var(--text-color2);
 }
 
 .swiper-button-next
@@ -516,6 +516,7 @@ input[type='button']:hover
     overflow: hidden;
     text-align: center;
     background: var(--secondary-colour);
+    margin: 0px auto;
 }
 
 #services .container .col .icon
@@ -558,8 +559,7 @@ input[type='button']:hover
 #services .container .col .icon h2
 {
     top: 230px;
-    position: absolute;
-    left: 20%;
+    position: relative;
     transition: 0.5s;
     color: var(--secondary-colour);
 }
@@ -857,9 +857,10 @@ input[type='button']:hover
 
 .iconGroup .details span
 {
-    display: block;
-    /* color: #888; */
+    display: flex;
+    flex-wrap: wrap;
     font-size: 18px;
+
 }
 
 .iconGroup .details span:nth-child(1)
@@ -1094,7 +1095,7 @@ textarea::-webkit-scrollbar-thumb
 .accordion:hover
 {
     background-color: var(--secondary-colour);
-    color: #000;
+    color: var(--border-top);
 }
 
 .panel
@@ -1122,7 +1123,7 @@ textarea::-webkit-scrollbar-thumb
 
 .panel p
 {
-    color: rgba(0, 0, 0, 0.7);
+    color: var(--border-top);
     font-size: 1.2rem;
 }
 
@@ -1409,7 +1410,7 @@ textarea::-webkit-scrollbar-thumb
 
 .banner p span:hover
 {
-    color: var(--primary-colour);
+    color: var(--text-color2);
 }
 
 
@@ -1436,11 +1437,6 @@ textarea::-webkit-scrollbar-thumb
     }
 
     .banner .container
-    {
-        padding-left: 50px;
-    }
-
-    #services .container
     {
         padding-left: 50px;
     }
@@ -1688,11 +1684,6 @@ textarea::-webkit-scrollbar-thumb
         height: 60px;
     }
 
-    #services .container
-    {
-        padding-left: 100px;
-    }
-
     .book-content
     {
         width: 80%;
@@ -1735,15 +1726,97 @@ textarea::-webkit-scrollbar-thumb
         visibility: hidden;
     }
 
-    #services .container
+    .book-content
     {
-        padding: 0px;
+        margin: 15px auto;
+        width: 90%;
+    }
+
+    .book-header
+    {
+        padding: 3px 5px;
+        font-size: 15px;
+    }
+
+    .book-header .close-book
+    {
+        font-size: 22px;
+        float: right;
+        margin: 0px 15px;
+    }
+
+    .book-header .close-book:hover
+    {
+        color: #000;
+        cursor: pointer;
+    }
+
+    .book-body
+    {
+        padding: 5px 10px;
+    }
+
+    .form-group
+    {
+        margin: 35px 0px;
+        margin-left: 12.5%;
+    }
+
+    .form-group input
+    {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .form-group label
+    {
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        color: #fff;
+        font-size: 10px;
+        transition: 0.4s;
+        pointer-events: none;
+    }
+
+    input[type='button']
+    {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+
+    .success-content
+    {
+        margin: 30px auto;
+        width: 50%;
+        align-content: center;
+    }
+
+    .success-content img
+    {
+        width: 180px;
+    }
+
+    .success-content h2
+    {
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 10px 0;
+    }
+
+    .success-content a 
+    {
+        justify-content: center;
+        display: flex;
+        align-items: center;
     }
 
     #services .container .col
     {
-        width: calc(300px - 30px);
-        height: calc(300px - 30px);
+        width: calc(250px - 25px);
+        height: calc(250px - 25px);
     }
 
     #services .container .col .icon
@@ -1762,7 +1835,7 @@ textarea::-webkit-scrollbar-thumb
     {
         cursor: pointer;
         top: 20px;
-        left: calc(50% - 40px);
+        left: calc(50% - 30px);
         width: 60px;
         height: 60px;
         border-radius: 50%;
@@ -1774,7 +1847,7 @@ textarea::-webkit-scrollbar-thumb
         top: 40%;
         left: 50%;
         transform: translate(-50%,-50%);
-        width: 120px;
+        width: 100px;
         transition: 0.5s;
     }
 
@@ -1785,11 +1858,9 @@ textarea::-webkit-scrollbar-thumb
 
     #services .container .col .icon h2
     {
-        top: 190px;
-        position: absolute;
-        left: 15%;
-        transition: 0.5s;
-        color: var(--secondary-colour);
+        top: 140px;
+        font-size: 20px;
+        position: relative;
     }
 
     #services .container .col:hover .icon h2
@@ -1803,7 +1874,7 @@ textarea::-webkit-scrollbar-thumb
         top: 100%;
         height: calc(100% - 100px);
         text-align: center;
-        padding: 20px;
+        padding: 10px;
         box-sizing: border-box;
         transition: 0.5s;
         opacity: 0;
@@ -1811,16 +1882,28 @@ textarea::-webkit-scrollbar-thumb
 
     #services .container .col:hover .content
     {
-        top: 100px;
+        top: 70px;
         opacity: 1;
     }
 
     #services .container .col .content h2
     {
-        margin: 10px 0 10px;
-        padding: 0;
-        color: var(--primary-colour);
-        font-size: 24px;
+        font-size: 20px;
+    }
+
+    #services .container .col .content p
+    {
+        font-size: 12px;
+    }
+
+    #services .fac div
+    {
+        height: 300px;
+    }
+
+    .row .left, .row .right
+    {
+        min-width: 100%;
     }
 
     .banner h2
@@ -1837,6 +1920,11 @@ textarea::-webkit-scrollbar-thumb
     #gallery .container
     {
         padding: 10px;
+    }
+
+    #gallery .container .box
+    {
+        height: 300px;
     }
 
     #footer .copyright
@@ -1868,9 +1956,19 @@ textarea::-webkit-scrollbar-thumb
     .top
     {
         bottom: 10px;
-        right: 20px;
-        width: 60px;
-        height: 60px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #services .fac div
+    {
+        height: 200px;
+    }
+
+    #gallery .container .box
+    {
+        height: 200px;
     }
 
     #contact
