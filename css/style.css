@@ -382,6 +382,22 @@ input[type='button']
     width: 50%;
 }
 
+input[type='submit']
+{
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: var(--secondary-colour);
+    color: var(--primary-colour);
+    border: 1px solid transparent;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
+    transition: 0.4s;
+    margin-left: 12.5%;
+    width: 50%;
+}
+
 input[type='button']:hover
 {
     background-color: var(--primary-colour);
