@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Sakeena Classy Halls</title>
+    <meta name="keyword" content="halls , hall, event , center , wedding , concert , birthday " />
+    <meta name="author" content="Aiden" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <section id="navbar">
+        <div class="container flex">
+            <h1 class="logo">
+             <a href="index.html"> <img src="images/logo.PNG" alt=""> </a>
+            </h1>
+            <nav>
+                <ul>
+                    <a class="active" href="index.html"> <li class="menu"> Home </li> </a>
+                    <a href="services.html"> <li class="menu">  Services </li> </a>
+                    <a href="about.html"> <li> About </li> </a>
+                    <a href="faqs.html"> <li> Faqs </li> </a>
+                    <a href="contact.html"> <li> Contact </li> </a>
+                </ul>
+                
+                <label id="icon">
+                    <i class="fas fa-bars"> </i>
+                </label>
+                <div class="toggle-btn" id="toggle-btn">
+                    <span id="btnText"> dark </span>
+                    <img src="images/moon.png" id="btnIcon">
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- BACK TO TOP -->
+    <section>
+        <div id="top" class="top">
+            <a href="#"> <img src="images/top.png" alt=""> </a>
+        </div>
+    </section>
+
+    <!-- FLOATING WHATSAPP -->
+    <div id="myDiv"></div>
+    
+    <!-- SLIDER -->
+    <section id="slider">
+        <div class="container-fluid swiper mySwiper">
+            <div class="content swiper-wrapper">
+                <div class="slides swiper-slide">
+                   <img src="images/slider2.jpg" alt="">
+                   <div class="img_overlay">
+                        <p> Welcome to Sakeena classy halls </p>
+                        <h2> Multi-Purpose Event Center </h2>
+                        <h3> for events and celebrations of any scale </h3>
+                        <button class="open-book">Book Now</button>
+                   </div>
+                </div>
+                <div class="slides swiper-slide">
+                    <img src="images/slider3.jpg" alt="">
+                    <div class="img_overlay">
+                        <p> Welcome to Sakeena classy halls </p>
+                        <h2> Multi-Purpose Event Center </h2>
+                        <h3> for events and celebrations of any scale </h3>
+                        <button class="open-book">Book Now</button>
+                   </div>
+                 </div>
+                 <div class="slides swiper-slide">
+                    <img src="images/slider4.jpg" alt="">
+                    <div class="img_overlay">
+                        <p> Welcome to Sakeena classy halls </p>
+                        <h2> Multi-Purpose Event Center </h2>
+                        <h3> for events and celebrations of any scale </h3>
+                        <button class="open-book">Book Now</button>
+                   </div>
+                 </div>
+            </div>
+            <div class="swiper-button-next clicker"></div>
+            <div class="swiper-button-prev clicker"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    <!-- BOOKING -->
+    <section id="book-modal" class="book">
+        <div class="book-content">
+            <div class="book-header">
+                <span class="close-book">&times;</span>
+                <h2>book now</h2>
+            </div>
+            <div class="book-body">
+                <!-- <h3>book now</h3> -->
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" name="name" id="" required>
+                        <label for="">Full name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phone" id="" required>
+                        <label for="">Phone</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" name="date" id="" required>
+                        <label for="">Date</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="additionalinformation" id="">
+                        <label for="">Additional Information (Optional)</label>
+                    </div>
+                    <input id="-success" type="submit" class="btn-secondary" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUCCESS -->
+    <section id="success-modal" class="success">
+        <div class="success-content">
+            <img src="images/success.png" alt="">
+            <h2>booking successful</h2>
+            <a href="index.html"><button class="btn btn-primary"> Home </button> </a>
+        </div>
+    </section>
+
+    <!-- BROCHURE -->
+    <section id="brochure">
+        <h2> brochure </h2>
+        <div class="container grid col3 col2 col1">
+            <div>
+                <img src="images/calender.png" alt="">
+                <h3> Book Your Event</h3>
+                <p>Got something to celebraate?</p>
+            </div>
+            <div>
+                <img src="images/crowd.png" alt="">
+                <h3> Two Halls</h3>
+                <p> Max-capacity - 450 guests</p>
+                <p> Total-capacity - 900 guests</p>
+            </div>
+            <div>
+                <img src="images/location.png" alt="">
+                <h3> Accessible Road</h3>
+                <p> Easy to locate venue </p>
+            </div>
+            <div>
+                <img src="images/power.png" alt="">
+                <h3> Power Supply </h3>
+                <p> Stand by Generator </p>
+            </div>
+            <div>
+                <img src="images/security.png" alt="">
+                <h3> Security </h3>
+                <p> CCTV located in strategic places</p>
+            </div>
+            <div>
+                <img src="images/others.png" alt="">
+                <h3> Other Facilities </h3>
+                <p> Lounge & Changing room</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <h2> services </h2>
+        <div class="container grid col3 col2 col1">
+           <div class="col">
+            <label class="icon">
+                <img src="images/ring.png" alt="">
+                <h2>Weddings</h2>
+            </label>
+            <div class="content">
+                <h2>Weddings</h2>
+                <p>Make wonderful memories on your special occasion </p>
+            </div>
+           </div> 
+           <div class="col">
+            <label class="icon">
+                <img src="images/cake2.png" alt="">
+                <h2>Birthday</h2>
+            </label>
+            <div class="content">
+                <h2>Birthday</h2>
+                <p>Whatever the age, mark a new year using our premium venue </p>
+            </div>
+           </div>  
+           <div class="col">
+            <label class="icon">
+                <img src="images/conference.png" alt="">
+                <h2>Conference</h2>
+            </label>
+            <div class="content">
+                <h2>Conference</h2>
+                <p>These cases are perfectly simple and easy to distinguish in a free hour </p>
+            </div>
+           </div> 
+        </div>
+        <center> <a href="services.html"> <button class="btn btn-primary">Learn More</button> </a> </center>
+    </section>
+
+    <!-- About us -->
+    <section id="about">
+        <h2>About</h2>
+        <div class="container grid acol2 col1">
+            <div class="col">
+                <b> <span>Plan Your Event at Sakeena Classy Halls.</span> </b>
+                <br><br>
+                Sakeena Classy Halls provides all the necessary services to ensure a smooth and successful event. Our experienced staff members, skilled professional caterers will take care of everything for you and make sure your guests needs are met.
+                <br><br>
+                Our event center offers seating, and tables for any occasion. With many options for event services near Abule Egba, we’re hopeful that you choose to bring your dream event to reality at Sakeena Classy Halls.
+                <br><br>
+                <center> <a href="about.html"> <button class="btn btn-secondary">Learn More</button> </a> </center>
+            </div>
+            <div class="col">
+                <img src="images/Snapchat-547491455.jpg" alt="">
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+        <h2> GALLERY </h2>
+        <div class="container">
+            <div class="box">
+                <img src="images/img1.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/img2.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/img3.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/img4.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/slider1.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/slider5.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/slider1.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/slider2.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/slider3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="book">
+        <div class="container">
+            <button class="btn btn-primary open-book"> book now <i class="bi bi-arrow-right"></i> </button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section id="footer">
+        <div class="container flex">
+            <div class="col">
+                <h2> Contact us </h2>
+                <span>
+                    <i class="bi bi-geo-alt"></i> Agbado Oko-Odo LCDA, 168 Ekoro Rd, Ekoro Junction, Abule Egba 102213, Lagos.
+                </span>
+                <br>
+                <br>
+                <span class=""> 
+                <i class="bi bi-telephone"> (+234)0812 493 7309</i> 
+                <br>
+                <i class="bi bi-telephone"> (+234)0803 306 3869</i> 
+                </span>
+                <br>
+                <br>
+                <span> 
+                    <a class="link" href="mailto:titishitta2006@yahoo.com"><i class="bi bi-envelope"></i> titishitta2006@yahoo.com</a>
+                    <br>
+                    <a class="link" href="mailto:ademolashitta@yahoo.co.uk"><i class="bi bi-envelope"></i> ademolashitta@yahoo.co.uk </a>
+                </span>
+                <br>
+                <br>
+                <span class="socialMedia">
+                    <a href="http://www.facebook.com/" target="_blank" class="link2"><i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="http://www.twitter.com/" target="_blank" class="link2"><i class="fa-brands fa-twitter"></i> </a>
+                    <a href="http://www.instagram.com/" target="_blank" class="link2"><i class="fa-brands fa-instagram"></i> </a>
+                    <a href="http://www.linkedin.com/" target="_blank" class="link2"><i class="fa-brands fa-linkedin-in"></i> </a>
+                </span>
+           </div> 
+           <div class="col">
+            <h1 class="logo">
+                <a href="index.html"> <img src="images/logo.PNG" alt=""> </a>
+            </h1>
+           </div> 
+           <div class="col">
+                <h2> Newsletter </h2>
+                <br>
+                <p> Suscribe to our newsletter to get important updates from us </p>
+                <form class="news">
+                    <input type="email">
+                    <button class="sub" type="submit"> Go </button>
+                </form>
+           </div> 
+        </div>
+        <div class="container copyright flex">
+            <h2> &copy; Copyright <span id="year"></span>. All Right Reserved. </h2>
+            <div> <img src="images/realtreademark.PNG" alt=""> </div>
+        </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <script src="js/index.js" defer></script>
+    <script src="js/function.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="floating-wpp.min.js"></script>
+    <link rel="stylesheet" href="floating-wpp.min.css">
+</body>
+</html>
